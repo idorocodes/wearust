@@ -21,7 +21,7 @@ chrono = { version = "0.4", features = ["serde"] }
 
 
 
-
+```rust
 use wearust::{find_location, find_weather};
 use tokio;
 
@@ -40,3 +40,5 @@ async fn main() -> Result<(), anyhow::Error> {
     
     Ok(())
 }
+
+
