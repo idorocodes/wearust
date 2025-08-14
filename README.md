@@ -19,7 +19,7 @@ chrono = { version = "0.4", features = ["serde"] }
 ```
 
 
-
+### USAGE
 
 ```rust
 use wearust::{find_location, find_weather};
