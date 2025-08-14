@@ -1,0 +1,25 @@
+[package]
+name = "wearust"              
+version = "0.1.0"              
+edition = "2021"
+authors = ["John Amos Idoroyen idoroyen33@gmmail.com"]
+description = "Async Rust library for fetching weather and location data using Weatherstack API"
+license = "MIT"
+repository = "https://github.com/idorocodes/wearust"
+readme = "README.md"
+keywords = ["rust", "weather", "api", "async", "serde"]
+categories = ["api-bindings", "data-processing", "network-programming"]
+homepage = "https://github.com/idorocodes/wearust"
+documentation = "https://docs.rs/wearust"
+
+[dependencies]
+reqwest = { version = "0.11", features = ["json"] }
+serde = { version = "1.0", features = ["derive"] }
+serde_json = {version = "1.0"}
+anyhow = "1.0"
+chrono = { version = "0.4", features = ["serde"] }
+tokio = { version = "1", features = ["full"] }
+
+[lib]
+name = "wearust"
+path = "src/lib.rs"
