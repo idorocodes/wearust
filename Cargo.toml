@@ -1,6 +1,6 @@
 [package]
 name = "wearust"              
-version = "0.1.0"              
+version = "0.1.1"              
 edition = "2021"
 authors = ["John Amos Idoroyen idoroyen33@gmmail.com"]
 description = "Async Rust library for fetching weather and location data using Weatherstack API"
