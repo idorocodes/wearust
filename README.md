@@ -21,7 +21,7 @@ chrono = { version = "0.4", features = ["serde"] }
 
 
 
-```toml
+
 use wearust::{find_location, find_weather};
 use tokio;
 
@@ -40,4 +40,3 @@ async fn main() -> Result<(), anyhow::Error> {
     
     Ok(())
 }
-```
