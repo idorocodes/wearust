@@ -8,7 +8,7 @@ license = "MIT"
 repository = "https://github.com/idorocodes/wearust"
 readme = "README.md"
 keywords = ["rust", "weather", "api", "async", "serde"]
-categories = ["api-bindings", "data-processing", "network-programming"]
+categories = ["api-bindings", "network-programming"]
 homepage = "https://github.com/idorocodes/wearust"
 documentation = "https://docs.rs/wearust"
 
