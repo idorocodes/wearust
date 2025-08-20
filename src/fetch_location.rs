@@ -1,14 +1,14 @@
 use anyhow::Error;
 use reqwest;
-use serde::Deserialize;
+use serde::{Serialize,Deserialize};
 use chrono::NaiveDateTime;
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct LocationResponse {
     pub location:  CityLocation,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct CityLocation {
     pub name: String,
     pub country: String,

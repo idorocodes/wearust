@@ -1,13 +1,13 @@
 use anyhow::Error;
 use reqwest;
-use serde::Deserialize;
+use serde::{Serialize,Deserialize};
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct WeatherResponse {
     pub current:  WeatherCondition,
 }
 
-#[derive(Debug, Deserialize)]
+#[derive(Debug, Clone, Serialize, Deserialize)]
 pub struct WeatherCondition {
     pub observation_time: String,
     pub temperature: i32,
