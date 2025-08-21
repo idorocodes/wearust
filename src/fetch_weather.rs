@@ -33,11 +33,11 @@ pub struct ConditionFields {
 
 pub async fn find_weather(location:&str,access_key:&str) -> Result<WeatherResponse, Error> {
     if location == "city" || location.is_empty() {
-        panic!("Location must be a city name");
+        panic!("Error : Location must be a string and must not be empty!");
     }
 
     if access_key == "access_key" || access_key.is_empty() {
-        panic!("Access key must be a valid key");
+       panic!("Error : Access_key must be a string and must not be empty!, get it from weatherapi.com");
     }
 
     let url = format!(

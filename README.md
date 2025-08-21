@@ -7,6 +7,10 @@ It uses async Rust with Tokio, safe JSON parsing with serde, and hides away the 
 
 ## 📦 Installation
 
+```
+> cargo install wearust 
+```
+
 Add this to your `Cargo.toml`:
 
 ```toml
